@@ -28,16 +28,25 @@ button{
     border: 1px solid rgba(0,0,0,0.5); 
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
-  background-color: rgb(25, 25, 173);}
+  background-color: rgb(25, 25, 173);
+  transition: background-color 1.2s ease-in-out;
+}
+
   
 
 button:hover{
    background-color: rgb(57, 119, 252);
+   
 }
 .container{
     max-width: 1400px;
     margin: auto;
+
     
+}
+
+#sobre-nosotros h3{
+    margin-left: 20px;
 }
 
 .color-palabra{color: blueviolet;}
@@ -117,9 +126,11 @@ p{
     background-color: rgb(209, 206, 206);
     color: black;
 
-    padding: 20px 12px;
+    padding: 20px 12px;;
     justify-content: center;
+
 }
+
 
 #capacitaciones{
     background-color: black;
@@ -133,7 +144,15 @@ p{
     margin: 30px;
     border-radius: 12px;
 }
+a{
+    color: rgb(180, 12, 12);
+    font-weight: bolder;
+    transition: background-color 0.8s ease-in-out;
 
+}
+a:hover{
+    background-color: rgb(29, 236, 167);
+}
 #capacitaciones .container{
      padding: 100px 12px;
 }
@@ -176,7 +195,7 @@ p{
 }
 
 #blog .container{
-     padding: 20px 12px;
+     padding: 30px 20px;
     justify-content: center;
     background-color: black;
     color: white;
@@ -194,6 +213,16 @@ p{
    
     justify-items: center;
 }
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+ul {
+    font-weight: bolder;
+} 
 
 footer{
     background-color: bisque;
@@ -214,4 +243,28 @@ footer{
  }
 .icono {
     justify-content: center
+}
+
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+
+    
+
 }
