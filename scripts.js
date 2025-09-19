@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
   const boton = document.getElementById('miBoton');
   const textoOculto = document.getElementById('textoOculto');
@@ -14,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-
 
 document.addEventListener('DOMContentLoaded', () => {
 
